@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+#bar{
+position:fixed;
+background-color:#91e2c6;
+margin-top:-10;
+margin-left:-10;
+margin-right:-10;
+width:110%;
+height:50px;
+border-radius:5px;
+padding-top:40px;
+}
+
+ul{
+margin-top:50px;
+display:inline;
+list-style:none;
+}
+
+li a{
+opacity:0.7;
+border-radius:4px;
+padding-top:10px;
+padding-bottom:10px;
+padding-right:20px;
+padding-left:20px;
+margin:10px;
+color:black;
+background-color:#eff2fc;
+width:block;
+list-style:none;
+text-decoration:none;
+}
+
+li a:hover {
+opacity:0.4;
+border:60px;
+border-color:#34ef98;
+border-radius-bottom:50px;
+}
+
+ul li{
+margin-top:50px;
+display:inline;
+}
+
+#body{
+background-color:#eff2fc;
+}
+#content{
+padding-top:100px;
+}
