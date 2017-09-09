@@ -10,7 +10,12 @@ public class Home {
     @RequestMapping("/")
     public ModelAndView Index(ModelAndView model){
         model=new ModelAndView("index");
-    model.addObject("msg","hello pakistan");
+        return model;
+
+    }
+    @RequestMapping("/users")
+    public ModelAndView Login(ModelAndView model){
+        model=new ModelAndView("/users/login");
         return model;
 
     }
