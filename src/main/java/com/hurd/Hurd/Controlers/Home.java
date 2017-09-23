@@ -1,6 +1,7 @@
 
 package com.hurd.Hurd.Controlers;
 
+import com.hurd.Hurd.data.MyRepo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,6 +17,7 @@ public class Home {
     @RequestMapping("/users")
     public ModelAndView Login(ModelAndView model){
         model=new ModelAndView("/users/login");
+
         return model;
 
     }
