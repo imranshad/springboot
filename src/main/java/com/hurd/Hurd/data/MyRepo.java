@@ -10,6 +10,6 @@ import java.util.List;
 /**
  * Created by shad on 9/23/17.
  */
-public interface MyRepo extends CrudRepository<Person,Id> {
-    List<Person> findByName(String name);
+public interface MyRepo {
+
 }

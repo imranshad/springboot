@@ -1,30 +1,32 @@
 package com.hurd.Hurd.Controlers;
 
-import com.hurd.Hurd.data.MyRepo;
+
+
+import com.hurd.Hurd.data.DbConnection;
 import com.hurd.Hurd.data.Person;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.SQLException;
 
 /**
  * Created by shad on 9/23/17.
  */
 @RestController
 public class jpa {
-    public  static MyRepo repo;
+    private Person person;
     @RequestMapping("/save")
-    public String JPA(){
+    public String JPA() throws SQLException, ClassNotFoundException {
 
 
-        repo.save(new Person("imran","imran.shad@ymail.com"));
-        repo.save(new Person("shad","imran.shad.khan@gmail.com"));
-        repo.save(new Person("zeeshan","imran.shad.khan1@gmail.com"));
 
-        return "Data has been saved successfully.....";
+
+        return "Connection  " ;
     }
     @RequestMapping("/load")
-    public String JPALoad(){
+    public String JPALoad() throws SQLException, ClassNotFoundException {
+            person=new Person();
 
-        return "hi";
+        return "ID :"+person.getEmail();
     }
 }
