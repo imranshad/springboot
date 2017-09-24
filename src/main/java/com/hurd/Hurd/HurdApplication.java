@@ -13,15 +13,11 @@ import java.sql.SQLException;
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={})
 public class HurdApplication {
-
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
-//		DbConnection dbConnection=new DbConnection();
-//		System.out.println(dbConnection.getConnection());
-		Person person=new Person();
-		//person.connection=DbConnection.getConnection();
-		//System.out.println(person.ConnectionStatus());
-		System.out.println(" Email"+person.getEmail().toString());
 
+		new Person("imram","imran.shad@ymail.com");
+		new Person("shad","imran.shad@gmail.com");
+		new Person("khan","imran.shad@hmail.com");
 		SpringApplication.run(HurdApplication.class, args);
 
 	}

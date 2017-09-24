@@ -2,7 +2,7 @@ package com.hurd.Hurd.Controlers;
 
 
 
-import com.hurd.Hurd.data.DbConnection;
+
 import com.hurd.Hurd.data.Person;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,7 +25,7 @@ public class jpa {
     }
     @RequestMapping("/load")
     public String JPALoad() throws SQLException, ClassNotFoundException {
-            person=new Person();
+
 
         return "ID :"+person.getEmail();
     }
