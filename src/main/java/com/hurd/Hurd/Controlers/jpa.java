@@ -15,9 +15,8 @@ import java.sql.SQLException;
 @RestController
 public class jpa {
     private Person person;
-    @RequestMapping("/save")
-    public String JPA() throws SQLException, ClassNotFoundException {
-
+    @RequestMapping("/session")
+    public String Session()  {
 
 
 
