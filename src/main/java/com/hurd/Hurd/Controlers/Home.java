@@ -13,9 +13,16 @@ public class Home {
         return model;
 
     }
-    @RequestMapping("/users")
+    @RequestMapping("/header")
     public ModelAndView Login(ModelAndView model){
-        model=new ModelAndView("/users/login");
+        model=new ModelAndView("header");
+
+        return model;
+
+    }
+    @RequestMapping("/default")
+    public ModelAndView Default(ModelAndView model){
+        model=new ModelAndView("default");
 
         return model;
 

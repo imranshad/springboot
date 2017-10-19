@@ -1,16 +1,9 @@
 package com.hurd.Hurd.data;
 
 
-import com.mysql.jdbc.log.Log;
-
-import javax.persistence.*;
 import java.sql.*;
 
-/**
- * Created by shad on 9/23/17.
- */
-//@Entity
-//@Table(name = "shad1")
+
 
 
 public class Person {
@@ -73,12 +66,12 @@ public class Person {
 
         return connection.toString();
     }
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+
+
     private int ID;
-    @Column(name = "name")
+
     private String name;
-    @Column(name = "email")
+
     private String email;
 
 }
